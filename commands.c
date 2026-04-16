@@ -23,19 +23,19 @@ void map_command(char *args[]) {
     else if (strcmp(args[0], "disk") == 0)
         args[0] = "df";
 
-    else if (strcmp(args[0], "memory") == 0)
+    else if (strcmp(args[0], "mem") == 0)
         args[0] = "free";
 
     else if (strcmp(args[0], "where") == 0)
         args[0] = "which";
 
-    else if (strcmp(args[0], "processes") == 0)
+    else if (strcmp(args[0], "proccount") == 0)
         args[0] = "ps";
 
     else if (strcmp(args[0], "killproc") == 0)
         args[0] = "kill";
 
-    else if (strcmp(args[0], "userinfo") == 0)
+    else if (strcmp(args[0], "name") == 0)
         args[0] = "whoami";
 
     else if (strcmp(args[0], "calendar") == 0)
@@ -44,10 +44,10 @@ void map_command(char *args[]) {
     else if (strcmp(args[0], "time") == 0)
         args[0] = "date";
 
-    else if (strcmp(args[0], "uptime") == 0)
+    else if (strcmp(args[0], "runtime") == 0)
         args[0] = "uptime";
 
-    else if (strcmp(args[0], "search") == 0)
+    else if (strcmp(args[0], "sfas") == 0) //search for a string (sfas)
         args[0] = "grep";
 }
 
@@ -67,24 +67,25 @@ int handle_builtin(char *args[]) {
 
     // Show available commands
     if (strcmp(args[0], "mycommands") == 0) {
-        printf("Available commands:\n");
+        printf("Available commands:\n\n");
         printf("list -> ls\n");
         printf("type -> cat\n");
         printf("space -> du\n");
         printf("change -> chmod\n");
         printf("archive -> tar\n");
         printf("disk -> df\n");
-        printf("memory -> free\n");
+        printf("mem -> free\n");
         printf("where -> which\n");
-        printf("processes -> ps\n");
+        printf("proccount -> ps\n");
         printf("killproc -> kill\n");
-        printf("userinfo -> whoami\n");
+        printf("name -> whoami\n");
         printf("calendar -> cal\n");
         printf("time -> date\n");
-        printf("uptime -> uptime\n");
-        printf("search -> grep\n");
+        printf("runtime -> uptime\n");
+        printf("sfas -> grep\n");
+	printf("mycommands -> show this list\n\n");	
+	printf("builtin commands:\n\n");
         printf("cd -> change directory\n");
-        printf("mycommands -> show this list\n");
         printf("exit -> exit shell\n");
         return 1;
     }

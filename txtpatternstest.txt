@@ -1,0 +1,38 @@
+ERROR 2026-04-15 10:00:01 auth login failed for user=alice ip=192.168.1.10
+INFO 2026-04-15 10:00:05 auth login success for user=bob ip=192.168.1.11
+WARNING 2026-04-15 10:01:12 disk usage at 85% on /dev/sda1
+INFO 2026-04-15 10:02:03 service nginx started pid=1421
+DEBUG 2026-04-15 10:02:45 config reload requested by user=admin
+ERROR 2026-04-15 10:03:17 database connection timeout host=db01 port=5432
+INFO 2026-04-15 10:03:55 cron job backup completed status=ok
+WARNING 2026-04-15 10:04:22 memory usage at 78% process=python3 pid=2011
+INFO 2026-04-15 10:05:01 ssh accepted password for user=carol from 10.0.0.25
+ERROR 2026-04-15 10:05:33 ssh failed password for user=root from 203.0.113.45
+INFO 2026-04-15 10:06:08 package install name=grep version=3.11
+DEBUG 2026-04-15 10:06:42 user input query="find all ERROR lines"
+INFO 2026-04-15 10:07:19 web request method=GET path=/api/tasks status=200
+INFO 2026-04-15 10:07:44 web request method=POST path=/api/tasks status=201
+ERROR 2026-04-15 10:08:03 web request method=DELETE path=/api/tasks/42 status=500
+WARNING 2026-04-15 10:08:41 certificate expires in 7 days domain=example.com
+INFO 2026-04-15 10:09:10 backup file created name=backup-2026-04-15.tar.gz
+DEBUG 2026-04-15 10:09:52 regex test pattern="^INFO"
+INFO 2026-04-15 10:10:11 service redis started pid=1550
+ERROR 2026-04-15 10:10:47 permission denied reading /etc/shadow user=test
+alpha
+Alpha
+ALPHA
+beta
+Beta
+BETA
+error lowercase example
+ERROR uppercase example
+user: alice email: alice@example.com
+user: bob email: bob@example.com
+user: carol email: carol@example.org
+phone=555-1234
+phone=555-9876
+ID-1001 status=open
+ID-1002 status=closed
+ID-1003 status=pending
+The quick brown fox jumps over the lazy dog.
+final line with keyword test
